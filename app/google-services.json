@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "421993336443",
+    "firebase_url": "https://hf2020-b3a01.firebaseio.com",
+    "project_id": "hf2020-b3a01",
+    "storage_bucket": "hf2020-b3a01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421993336443:android:229be660dc5ff3bc22dcde",
+        "android_client_info": {
+          "package_name": "com.iced.hf2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421993336443-l9tia8afa640qv8bb78ncaniu8h6tig7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAlrT2AbgHiJViOsoep52zylTgV7c27NA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421993336443-l9tia8afa640qv8bb78ncaniu8h6tig7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
