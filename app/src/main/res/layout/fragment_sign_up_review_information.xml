@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.SignUpReviewInformation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Review"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:lineHeight="24dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Please review the information you have given."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Full Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Christian Daniel Noriega Perez"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="User type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="User"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="Email Address"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="christian.daniel.perez12@gmail.com"/>
+
+
+</LinearLayout>
