@@ -8,35 +8,35 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#7FDCC7</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">#222831</item>
+        <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="fontFamily">@font/roboto</item>
     </style>
     <style name="header_h6">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="lineHeight">28sp</item>
         <item name="lineSpacing">14sp</item>
     </style>
     <style name="header_h4">
-        <item name="android:textSize">27sp</item>
+        <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="lineHeight">28sp</item>
         <item name="lineSpacing">14sp</item>
     </style>
     <style name="font_BodyRegular">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="lineHeight">20sp</item>
         <item name="lineSpacing">14sp</item>
     </style>
     <style name="font_BodyBold">
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="lineHeight">14sp</item>
         <item name="lineSpacing">14sp</item>

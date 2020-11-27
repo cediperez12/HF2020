@@ -7,18 +7,49 @@
     android:orientation="vertical"
     tools:context=".Fragments.UserHomeFragment">
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hospital"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"/>
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        tools:context=".Fragments.SignUpAccountInformation">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".Fragments.SignUpAccountInformation">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/header_h4"
+                android:text="Hospital"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/round_local_hospital_black_18dp"
+            app:startIconTint="@color/colorPrimary"
+           />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lists of Hospital you manage."
+        android:textColor="@color/grayText"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"/>
@@ -32,20 +63,21 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:background="@color/black"
-            android:layout_gravity="center"/>
+            android:layout_weight="1"
+            android:background="@color/colorSecondary" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="See all"
             android:layout_gravity="center_vertical"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:text="See all"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 
     <RelativeLayout
@@ -65,22 +97,28 @@
             app:fabSize="mini"
             android:layout_above="@id/f_user_home_fab_add_nurse"
             android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/scope"
             android:layout_marginEnd="16dp"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/f_user_home_fab_add_nurse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fabSize="mini"
             android:layout_above="@id/f_user_home_fab_add_runner"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/round_favorite_border_white_18dp"
+            app:fabSize="mini" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/f_user_home_fab_add_runner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fabSize="mini"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/round_directions_run_white_18dp"
             android:layout_above="@id/f_user_home_fab"
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="8dp"
@@ -89,6 +127,8 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/f_user_home_fab"
             android:layout_width="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/round_clear_white_18dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
