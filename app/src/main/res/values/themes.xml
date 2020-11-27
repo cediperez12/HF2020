@@ -12,5 +12,13 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="textNiCedie">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="lineHeight">14sp</item>
+        <item name="lineSpacing">14sp</item>
     </style>
 </resources>
