@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PatientViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Toolbar.Surface"
+            app:title="View Patient"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/header_h4"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Patient Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Christian Daniel N. Perez"
+            android:textAppearance="@style/font_BodyRegular"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:paddingStart="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/patient_view_txtv_sickness_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/header_h6"
+                android:text="Sickness"/>
+
+            <TextView
+                android:id="@+id/patient_view_txtv_sickness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patient_view_txtv_sickness_title"
+                android:textAppearance="@style/font_BodyRegular"
+                android:text="Hemmorhage"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/patient_view_txtv_symptoms_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/header_h6"
+                android:text="Symptoms"/>
+
+            <TextView
+                android:id="@+id/patient_view_txtv_symptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patient_view_txtv_symptoms_title"
+                android:textAppearance="@style/font_BodyRegular"
+                android:text="Headache"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/patient_view_txtv_last_checkup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/header_h6"
+                android:text="Last Check up"/>
+
+            <TextView
+                android:id="@+id/patient_view_txtv_last_checkup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patient_view_txtv_last_checkup_title"
+                android:textAppearance="@style/font_BodyRegular"
+                android:text="December 12, 2020"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/patient_view_txtv_medical_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/header_h6"
+                android:text="Medical History"/>
+
+            <TextView
+                android:id="@+id/patient_view_txtv_medical_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patient_view_txtv_medical_history_title"
+                android:textAppearance="@style/font_BodyRegular"
+                android:text="Heart Attack"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/patient_view_txtv_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/header_h6"
+                android:text="Status"/>
+
+            <TextView
+                android:id="@+id/patient_view_txtv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patient_view_txtv_status_title"
+                android:textAppearance="@style/font_BodyRegular"
+                android:text="Going-well"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:paddingStart="16dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/patient_view_prescription_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/header_h6"
+                android:text="Prescription"/>
+
+            <TextView
+                android:id="@+id/patient_view_prescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/patient_view_prescription_title"
+                android:textAppearance="@style/font_BodyRegular"
+                android:text="Amoxicillin, Alaxan FR, Neozep"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/patient_view_schedule_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="@style/header_h6"
+                android:paddingStart="16dp"
+                android:text="Schedule"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/round_email_black_18dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
