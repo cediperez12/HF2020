@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".Fragments.AdmitPatientMedicalCondition">
@@ -17,46 +18,59 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/grayText"
         android:text="Contact Information is required before admitting a patient."
         android:textAppearance="@style/font_BodyRegular"
         />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Sickness"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconDrawable="@drawable/round_sick_white_18dp"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Symptoms (Optional)"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconDrawable="@drawable/round_playlist_add_white_18dp"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Medical History"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconDrawable="@drawable/round_history_edu_white_18dp"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke" />
 
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

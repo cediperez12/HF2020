@@ -10,13 +10,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Information Review"
-            android:textAppearance="@style/header_h4"/>
+            android:textAppearance="@style/header_h4"
+            android:textColor="@color/colorPrimary" />
 
         <TextView
             android:layout_width="match_parent"
@@ -36,8 +38,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="Christian Daniel N. Perez"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="Christian Daniel N. Perez"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -50,8 +53,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="December 12, 1999"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="December 12, 1999"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -64,8 +68,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="Single"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="Single"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -78,8 +83,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="09267234147"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="09267234147"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -92,8 +98,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="Arlene Noriega Perez"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="Arlene Noriega Perez"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -106,8 +113,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="09051956446"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="09051956446"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -120,8 +128,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="Headache"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="Headache"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -134,8 +143,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:text="Headache, toothache"
             android:textAppearance="@style/font_BodyRegular"
-            android:text="Headache, toothache"/>
+            android:textColor="@color/grayText" />
 
         <TextView
             android:layout_width="match_parent"
@@ -155,10 +165,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:textColor="@color/white"
+            style="@style/header_h6"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="6dp"
             android:layout_gravity="center_horizontal"
-            android:text="Admit this Patient"
+            android:text="ADMIT THIS PATIENT"
             android:textAllCaps="false"/>
 
     </LinearLayout>

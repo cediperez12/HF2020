@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,6 +11,7 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
+        android:textColor="@color/textColor"
         android:layout_height="wrap_content"
         android:textAppearance="@style/header_h4"
         android:text="Contact Information" />
@@ -18,49 +20,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textColor="@color/grayText"
         android:textAppearance="@style/font_BodyRegular"
         android:text="Contact Information is required before admitting a patient." />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:hint="Contact Number"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:startIconDrawable="@drawable/round_contact_phone_white_18dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:maxLength="11"/>
+            android:background="@drawable/textinput_stroke"
+            android:maxLength="11"
+            android:phoneNumber="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Relative Full Name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:startIconDrawable="@drawable/round_perm_identity_black_18dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:background="@drawable/textinput_stroke"
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Relative Contact Number"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:startIconDrawable="@drawable/round_contact_phone_white_18dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke"
             android:inputType="number"
-            android:maxLength="11"/>
+            android:maxLength="11"
+            android:phoneNumber="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

@@ -18,6 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/grayText"
         android:layout_marginTop="8dp"
         android:text="Personal information is required."
         android:textAppearance="@style/font_BodyRegular"
@@ -27,12 +28,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        app:startIconDrawable="@drawable/round_perm_identity_black_18dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary"
         android:hint="First Name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke"
             android:inputType="textPersonName"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -40,6 +45,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/round_perm_identity_black_18dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary"
         android:layout_marginTop="16dp"
         android:hint="Last Name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -47,6 +55,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke"
             android:inputType="textPersonName"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -55,43 +64,54 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:startIconDrawable="@drawable/round_perm_identity_black_18dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:startIconTint="@color/colorPrimary"
         android:hint="Middle Name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/textinput_stroke"
             android:inputType="textPersonName"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:hint="Birth Date"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:startIconDrawable="@drawable/round_cake_white_18dp"
+        app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:background="@drawable/textinput_stroke"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/round_email_black_18dp"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/textinput_stroke"
+        app:boxStrokeColor="@color/colorPrimary"
         android:hint="Marital Status"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        android:paddingTop="0dp"
+        app:startIconDrawable="@drawable/round_favorite_border_white_18dp"
+        app:startIconTint="@color/colorPrimary">
 
         <AutoCompleteTextView
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:inputType="none"
-            />
+            android:inputType="none" />
 
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>
