@@ -16,23 +16,36 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:titleTextColor="@color/colorPrimary"
             style="@style/Widget.MaterialComponents.Toolbar.Surface"
             app:title="View Patient"/>
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/header_h4"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="Patient Name"/>
+            android:background="@drawable/both_edge_2"
+            android:paddingStart="16dp"
+            android:layout_margin="5dp"
+            android:padding="8dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Christian Daniel N. Perez"
-            android:textAppearance="@style/font_BodyRegular"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:text="Patient Name"
+                android:textAppearance="@style/header_h4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Christian Daniel N. Perez"
+                android:textAppearance="@style/font_BodyRegular"
+                android:textColor="@color/textColor" />
+
+        </LinearLayout>
+
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -45,16 +58,18 @@
                 android:id="@+id/patient_view_txtv_sickness_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Sickness"
                 android:textAppearance="@style/header_h6"
-                android:text="Sickness"/>
+                android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/patient_view_txtv_sickness"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/patient_view_txtv_sickness_title"
+                android:text="Hemmorhage"
                 android:textAppearance="@style/font_BodyRegular"
-                android:text="Hemmorhage"/>
+                android:textColor="@color/grayText" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -62,8 +77,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:src="@drawable/round_edit_white_18dp" />
 
         </RelativeLayout>
 
@@ -78,16 +93,18 @@
                 android:id="@+id/patient_view_txtv_symptoms_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Symptoms"
                 android:textAppearance="@style/header_h6"
-                android:text="Symptoms"/>
+                android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/patient_view_txtv_symptoms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/patient_view_txtv_symptoms_title"
+                android:text="Headache"
                 android:textAppearance="@style/font_BodyRegular"
-                android:text="Headache"/>
+                android:textColor="@color/grayText" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -95,8 +112,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:src="@drawable/round_edit_white_18dp" />
 
         </RelativeLayout>
 
@@ -111,25 +128,18 @@
                 android:id="@+id/patient_view_txtv_last_checkup_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Last Check up"
                 android:textAppearance="@style/header_h6"
-                android:text="Last Check up"/>
+                android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/patient_view_txtv_last_checkup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/patient_view_txtv_last_checkup_title"
+                android:text="December 12, 2020"
                 android:textAppearance="@style/font_BodyRegular"
-                android:text="December 12, 2020"/>
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:textColor="@color/grayText" />
 
         </RelativeLayout>
 
@@ -144,25 +154,18 @@
                 android:id="@+id/patient_view_txtv_medical_history_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Medical History"
                 android:textAppearance="@style/header_h6"
-                android:text="Medical History"/>
+                android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/patient_view_txtv_medical_history"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/patient_view_txtv_medical_history_title"
+                android:text="Heart Attack"
                 android:textAppearance="@style/font_BodyRegular"
-                android:text="Heart Attack"/>
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:textColor="@color/grayText" />
 
         </RelativeLayout>
 
@@ -177,16 +180,18 @@
                 android:id="@+id/patient_view_txtv_status_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Status"
                 android:textAppearance="@style/header_h6"
-                android:text="Status"/>
+                android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/patient_view_txtv_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/patient_view_txtv_status_title"
+                android:text="Going-well"
                 android:textAppearance="@style/font_BodyRegular"
-                android:text="Going-well"/>
+                android:textColor="@color/grayText" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -194,14 +199,16 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:src="@drawable/round_edit_white_18dp" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/both_edge_2"
+            android:layout_margin="5dp"
             android:layout_marginTop="32dp"
             android:paddingStart="16dp"
             android:padding="8dp">
@@ -210,16 +217,19 @@
                 android:id="@+id/patient_view_prescription_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Prescription"
+
                 android:textAppearance="@style/header_h6"
-                android:text="Prescription"/>
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/patient_view_prescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/patient_view_prescription_title"
+                android:text="Amoxicillin, Alaxan FR, Neozep"
                 android:textAppearance="@style/font_BodyRegular"
-                android:text="Amoxicillin, Alaxan FR, Neozep"/>
+                android:textColor="@color/textColor" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -227,8 +237,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/round_edit_white_18dp1" />
 
         </RelativeLayout>
 
@@ -236,6 +247,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:layout_marginRight="12dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -252,8 +264,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/round_email_black_18dp"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:src="@drawable/round_edit_white_18dp" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
