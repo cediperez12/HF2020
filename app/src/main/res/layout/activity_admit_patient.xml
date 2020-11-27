@@ -11,10 +11,12 @@
         android:id="@+id/materialToolbar2"
         style="@style/Widget.MaterialComponents.Toolbar.Surface"
         android:layout_width="match_parent"
+        app:titleTextColor="@color/colorPrimary"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/round_chevron_left_black_18dp"
         app:title="Admit a patient" />
 
     <androidx.viewpager.widget.ViewPager
