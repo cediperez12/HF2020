@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HF2020">
-        <activity android:name=".PatientViewActivity"></activity>
+        <activity android:name=".RunnerSetupDoneActivity"></activity>
+        <activity android:name=".OrderItemRunner" />
+        <activity android:name=".ChooseRunnerActivity" />
+        <activity android:name=".PatientViewActivity" />
         <activity android:name=".AdmitPatientActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />

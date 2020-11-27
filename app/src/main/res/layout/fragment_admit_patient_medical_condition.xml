@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact Information"
+        android:text="Medical Condition"
         android:textAppearance="@style/header_h4"
         />
 
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/grayText"
-        android:text="Contact Information is required before admitting a patient."
+        android:text="Medical condition is required."
         android:textAppearance="@style/font_BodyRegular"
         />
 
