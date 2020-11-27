@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="f6">12.80sp</dimen>
+    <dimen name="f5">16.00sp</dimen>
+    <dimen name="f4">24.00sp</dimen>
+    <dimen name="f3">30.00sp</dimen>
+    <dimen name="f2">36.25sp</dimen>
+    <dimen name="f1">48.83sp</dimen>
+</resources>
