@@ -14,7 +14,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Sign Up" />
+
+        app:logo="@drawable/round_chevron_left_black_18dp"
+        app:title="Sign Up"
+        app:titleTextColor="@color/colorPrimary" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/sign_up_vp"
@@ -27,15 +30,16 @@
 
     <Button
         android:id="@+id/sign_up_btn_nex"
+        style="@style/header_h6"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="16dp"
         android:padding="16dp"
-        android:text="Next"
+        android:text="NEXT"
         android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         app:layout_constraintBottom_toTopOf="@+id/sign_up_vp_dot_indicator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -46,8 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         app:dotsCornerRadius="8dp"
-        app:dotsSize="16dp"
+        app:dotsSize="14dp"
         app:dotsSpacing="4dp"
+        app:dotsColor="@color/gray"
+        app:selectedDotColor="@color/colorPrimary"
         app:dotsWidthFactor="2.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
