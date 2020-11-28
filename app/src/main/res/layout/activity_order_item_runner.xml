@@ -21,29 +21,33 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/header_h4"
             android:paddingStart="16dp"
-            android:text="Christian Daniel N. Perez"/>
+            android:text="Christian Daniel N. Perez"
+            android:textAppearance="@style/header_h4"
+            android:textColor="@color/colorPrimary" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/topboth_edge"
             android:layout_marginTop="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingStart="16dp"
                 android:text="ITEM"
                 android:textAppearance="@style/header_h6"
-                android:paddingStart="16dp"/>
+                android:textColor="@color/white" />
 
             <ImageButton
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/round_email_black_18dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="16dp"/>
+                android:layout_marginEnd="16dp"
+                android:background="#009C3232"
+                tools:src="@drawable/baseline_add_white_18dp" />
 
         </RelativeLayout>
 
@@ -55,8 +59,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="16dp"/>
+            android:layout_height="3dp"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimary" />
 
         <RelativeLayout
             android:layout_width="match_parent"
