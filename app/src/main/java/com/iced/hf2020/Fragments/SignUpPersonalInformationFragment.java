@@ -17,7 +17,7 @@ import com.iced.hf2020.R;
 public class SignUpPersonalInformationFragment extends Fragment {
 
     @BindViews({R.id.f_sign_up_personal_til_first_name,R.id.f_sign_up_personal_til_last_name,R.id.f_sign_up_personal_til_middle_name})
-    private TextInputLayout[] tilList;
+    public TextInputLayout[] tilList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,14 +29,14 @@ public class SignUpPersonalInformationFragment extends Fragment {
     }
 
     public String getFirstName(){
-        return tilList[0].getEditText().toString().trim();
+        return tilList[0].getEditText().getText().toString().trim();
     }
 
     public String getLastName(){
-        return tilList[1].getEditText().toString().trim();
+        return tilList[1].getEditText().getText().toString().trim();
     }
 
     public String getMiddleName(){
-        return tilList[2].getEditText().toString().trim();
+        return tilList[2].getEditText().getText().toString().trim();
     }
 }
