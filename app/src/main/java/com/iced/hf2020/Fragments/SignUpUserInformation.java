@@ -1,66 +1,76 @@
 package com.iced.hf2020.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 
+import com.iced.hf2020.SignUpActivity;
+
 import androidx.fragment.app.Fragment;
+import butterknife.BindView;
+import butterknife.BindViews;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.iced.hf2020.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link SignUpUserInformation#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class SignUpUserInformation extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private SignUpActivity activity;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public SignUpUserInformation() {
-        // Required empty public constructor
+    public SignUpUserInformation(SignUpActivity context){
+        this.activity = context;
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SignUpUserInformation.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static SignUpUserInformation newInstance(String param1, String param2) {
-        SignUpUserInformation fragment = new SignUpUserInformation();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    @BindViews({R.id.f_sign_up_user_info_btn_user,
+            R.id.f_sign_up_user_info_btn_nurse,
+            R.id.f_sign_up_user_info_btn_doctor,
+            R.id.f_sign_up_user_info_btn_runner})
+    private Button[] btnList;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private String userType;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_up_user_information, container, false);
+        View view = inflater.inflate(R.layout.fragment_sign_up_user_information, container, false);
+        ButterKnife.bind(view);
+        return view;
+    }
+
+    @OnClick({R.id.f_sign_up_user_info_btn_user,
+            R.id.f_sign_up_user_info_btn_nurse,
+            R.id.f_sign_up_user_info_btn_doctor,
+            R.id.f_sign_up_user_info_btn_runner})
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.f_sign_up_user_info_btn_user:
+                userType = "User";
+                break;
+
+            case R.id.f_sign_up_user_info_btn_nurse:
+                userType = "Nurse";
+                break;
+
+            case R.id.f_sign_up_user_info_btn_doctor:
+                userType = "Doctor";
+                break;
+
+            case R.id.f_sign_up_user_info_btn_runner:
+                userType = "Runner";
+                break;
+        }
+
+        activity.viewPager.setCurrentItem(2);
+    }
+
+    public String getUserType(){
+        return userType;
     }
 }

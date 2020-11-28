@@ -65,16 +65,20 @@
         android:layout_marginTop="36dp"
         android:layout_height="wrap_content">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/f_sign_up_user_info_btn_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:strokeColor="@color/colorPrimary"
             android:text="User"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:textAllCaps="false"
             android:layout_margin="8dp"
             android:padding="16dp"
             android:layout_weight="1"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/f_sign_up_user_info_btn_nurse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:strokeColor="@color/colorPrimary"
@@ -92,6 +96,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/f_sign_up_user_info_btn_doctor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Doctor"
@@ -104,6 +109,7 @@
             android:layout_weight="1"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/f_sign_up_user_info_btn_runner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:strokeColor="@color/colorPrimary"

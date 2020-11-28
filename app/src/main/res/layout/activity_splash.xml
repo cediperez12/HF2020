@@ -7,10 +7,11 @@
     tools:context=".SplashActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/splash_login_btn"
         style="@style/TextAppearance.MaterialComponents.Button"
         android:layout_width="188dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/splash_login_btn"
+        android:layout_above="@+id/splash_txtv_signup"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
         android:padding="14dp"
@@ -20,7 +21,7 @@
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/splash_login_btn"
+        android:id="@+id/splash_txtv_signup_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/font_BodyRegular"

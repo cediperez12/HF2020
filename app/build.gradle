@@ -52,9 +52,6 @@ dependencies {
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-    //MPAChart
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
-
     //Dots
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
 }

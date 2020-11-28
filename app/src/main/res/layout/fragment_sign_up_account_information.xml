@@ -59,6 +59,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/f_sign_up_account_info_email_add_til"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,6 +80,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/f_sign_up_account_info_pass_til"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,6 +104,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/f_sign_up_account_info_confirm_pass_til"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="32dp"

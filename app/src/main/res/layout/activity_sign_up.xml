@@ -7,15 +7,13 @@
     tools:context=".SignUpActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar"
+        android:id="@+id/sign_up_material_toolbar"
         style="@style/Widget.MaterialComponents.Toolbar.Surface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:logo="@drawable/round_chevron_left_black_18dp"
         app:title="Sign Up"
         app:titleTextColor="@color/colorPrimary" />
 
@@ -26,11 +24,11 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/sign_up_btn_nex"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"></androidx.viewpager.widget.ViewPager>
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_material_toolbar"></androidx.viewpager.widget.ViewPager>
 
     <Button
         android:id="@+id/sign_up_btn_nex"
-        style="@style/header_h6"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +36,7 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="16dp"
         android:padding="16dp"
-        android:text="NEXT"
+        android:text="Next"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/sign_up_vp_dot_indicator"
         app:layout_constraintEnd_toEndOf="parent"

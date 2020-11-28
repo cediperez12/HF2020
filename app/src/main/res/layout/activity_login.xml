@@ -17,6 +17,7 @@
         app:srcCompat="@drawable/wecare_icon" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_til_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email Address"
@@ -37,6 +38,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_til_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -53,12 +55,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/textinput_stroke"
-            android:inputType="textEmailAddress"
-            android:password="true" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/login_btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -83,6 +85,7 @@
         android:text="Don't have an account yet?"/>
 
     <TextView
+        android:id="@+id/login_txtv_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
