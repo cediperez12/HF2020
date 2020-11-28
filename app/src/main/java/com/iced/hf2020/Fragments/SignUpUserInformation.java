@@ -23,17 +23,17 @@ public class SignUpUserInformation extends Fragment {
 
     private SignUpActivity activity;
 
-    public SignUpUserInformation(SignUpActivity context){
-        this.activity = context;
-    }
-
     @BindViews({R.id.f_sign_up_user_info_btn_user,
             R.id.f_sign_up_user_info_btn_nurse,
             R.id.f_sign_up_user_info_btn_doctor,
             R.id.f_sign_up_user_info_btn_runner})
-    private Button[] btnList;
+    public Button[] btnList;
 
     private String userType;
+
+    public SignUpUserInformation(SignUpActivity context){
+        this.activity = context;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,10 +44,12 @@ public class SignUpUserInformation extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.f_sign_up_user_info_btn_user,
+    @OnClick({
+            R.id.f_sign_up_user_info_btn_user,
             R.id.f_sign_up_user_info_btn_nurse,
             R.id.f_sign_up_user_info_btn_doctor,
-            R.id.f_sign_up_user_info_btn_runner})
+            R.id.f_sign_up_user_info_btn_runner
+    })
     public void onClick(View view){
         switch (view.getId()){
             case R.id.f_sign_up_user_info_btn_user:

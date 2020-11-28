@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/f_doctor_home_txtv_patients" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/f_doctor_home_fab_admit"
         android:layout_width="57dp"
         android:layout_height="62dp"
         android:layout_gravity="bottom|left"
