@@ -43,7 +43,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -56,13 +55,13 @@
         app:boxCornerRadiusTopStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke"
         app:layout_constraintStart_toEndOf="@+id/imageButton2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/textinput_stroke1"
             android:textAppearance="@style/font_BodyRegular" />
 
     </com.google.android.material.textfield.TextInputLayout>

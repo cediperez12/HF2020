@@ -25,56 +25,53 @@
         android:text="Contact Information is required before admitting a patient." />
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:hint="Contact Number"
         app:startIconDrawable="@drawable/round_contact_phone_white_18dp"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke"
         app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:background="@drawable/textinput_stroke"
             android:maxLength="11"
             android:phoneNumber="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Relative Full Name"
         app:startIconDrawable="@drawable/round_perm_identity_black_18dp"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke"
         app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:background="@drawable/textinput_stroke"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="Relative Contact Number"
         app:startIconDrawable="@drawable/round_contact_phone_white_18dp"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke"
         app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/textinput_stroke"
             android:inputType="number"
             android:maxLength="11"
             android:phoneNumber="true" />

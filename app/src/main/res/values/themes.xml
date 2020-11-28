@@ -41,4 +41,9 @@
         <item name="lineHeight">14sp</item>
         <item name="lineSpacing">14sp</item>
     </style>
+
+    <style name="textInputStroke" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
 </resources>

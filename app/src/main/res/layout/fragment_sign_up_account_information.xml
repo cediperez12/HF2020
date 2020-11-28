@@ -60,7 +60,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/f_sign_up_account_info_email_add_til"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -69,19 +68,19 @@
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         app:startIconDrawable="@drawable/round_email_black_18dp"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke"
         app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/textinput_stroke" />
+             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/f_sign_up_account_info_pass_til"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -91,13 +90,13 @@
         android:paddingEnd="32dp"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/round_lock_black_18dp"
-        app:boxStrokeColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke"
         app:startIconTint="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/textinput_stroke"
             android:inputType="textPassword"
             android:password="true" />
 
@@ -114,14 +113,13 @@
         android:layout_marginTop="8dp"
         android:hint="Confirm Password"
         app:startIconDrawable="@drawable/round_lock_black_18dp"
-        app:boxStrokeColor="@color/colorPrimary"
         app:startIconTint="@color/colorPrimary"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        style="@style/textInputStroke">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/textinput_stroke"
             android:inputType="textPassword"
             android:password="true" />
 
