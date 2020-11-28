@@ -16,9 +16,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/header_h4"
+        android:paddingStart="16dp"
+        android:layout_marginTop="100dp"
         android:text="All Set!"
-        android:paddingStart="16dp"/>
+        android:textAppearance="@style/header_h4"
+        android:textColor="@color/colorPrimary" />
 
     <TextView
         android:layout_width="match_parent"
@@ -30,13 +32,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="Go Home"
-        android:textAllCaps="false"
-        />
+        android:padding="16dp"
+        android:text="GO HOME"
+        android:textAllCaps="false" />
 
 
 </LinearLayout>

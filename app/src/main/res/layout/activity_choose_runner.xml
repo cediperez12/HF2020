@@ -8,18 +8,19 @@
     tools:context=".ChooseRunnerActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
+        style="@style/Widget.MaterialComponents.Toolbar.Surface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.Toolbar.Surface"
         app:title="Choose your runner"
-        />
+        app:titleTextColor="@color/colorPrimary" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Available Runners"
         android:paddingStart="16dp"
-        android:textAppearance="@style/header_h4"/>
+        android:text="Available Runners"
+        android:textAppearance="@style/header_h4"
+        android:textColor="@color/textColor" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
