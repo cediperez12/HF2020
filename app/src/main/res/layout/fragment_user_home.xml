@@ -34,7 +34,6 @@
                 android:layout_marginStart="16dp"/>
 
 
-
         </LinearLayout>
         <ImageView
             android:id="@+id/imageView6"
@@ -87,6 +86,7 @@
         android:layout_marginEnd="16dp">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/f_user_home_recyclerv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

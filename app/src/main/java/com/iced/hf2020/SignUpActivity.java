@@ -10,6 +10,7 @@ import butterknife.ButterKnife;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -67,6 +68,36 @@ public class SignUpActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         userDatabaseReference = FirebaseDatabase.getInstance().getReference("users");
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int pos = viewPager.getCurrentItem();
+
+                SignUpPersonalInformationFragment personalFragment = (SignUpPersonalInformationFragment) adapter.childFragments[0];
+                SignUpUserInformation userInformationFragment = (SignUpUserInformation)adapter.childFragments[1];
+                SignUpAccountInformation accountInformationFragment = (SignUpAccountInformation)adapter.childFragments[2];
+                SignUpReviewInformation reviewInformationFragment = (SignUpReviewInformation)adapter.childFragments[3];
+
+                switch (pos){
+                    case 2:
+                        emailAdd = accountInformationFragment.getEmail();
+                        strPass = accountInformationFragment.getStrPass();
+                        strConPass = accountInformationFragment.getStrConfirmPass();
+                        break;
+
+                    case 1:
+                        strUserType = userInformationFragment.getUserType();
+                        break;
+
+                    case 0:
+                        strFirstName = personalFragment.getFirstName();
+                        strLastName = personalFragment.getLastName();
+                        strMiddleName = personalFragment.getMiddleName();
+                        break;
+                }
+            }
+        });
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -163,4 +194,24 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(viewPager.getCurrentItem() == 0)
+            super.onBackPressed();
+        else
+            viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+    }
+
+
 }
